@@ -47,7 +47,7 @@ for epoch in range(epochs+1):
 
     gradient_b = 0
     for (x,y) in zip(X, Y):
-        gradient_b += (-1/X.size)*( y-m*x-b)\
+        gradient_b += (-1/X.size)*( y-m*x-b)
 
     # Update parameters
     m_new = m - learning_rate * gradient_m
